@@ -18,17 +18,7 @@ This repository contains a Flask-based chatbot application that integrates OpenA
 
 ## Installation
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
-   ```
 
-2. **Create a Virtual Environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
 
 3. **Install Dependencies**
    ```bash
@@ -52,23 +42,6 @@ This repository contains a Flask-based chatbot application that integrates OpenA
    python app.py
    ```
 
-2. **Access the API**
-   Use an HTTP client (e.g., Postman or cURL) to send POST requests to the `/chat` endpoint.
-
-   Example Request:
-   ```bash
-   curl -X POST http://127.0.0.1:5000/chat \
-        -d "userID=123" \
-        -d "message=What is the best hotel in New York?"
-   ```
-
-   Example Response:
-   ```json
-   {
-       "response": "Based on the provided context, the best hotels in New York include...",
-       "sessionID": "12345-67890"
-   }
-   ```
 
 ## Project Structure
 
@@ -98,13 +71,8 @@ This repository contains a Flask-based chatbot application that integrates OpenA
 - Verify that the PDF file path is correct and the file exists.
 - Check MongoDB connectivity using `mongo_client.admin.command('ping')`.
 
-## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request if you have ideas for improvements or encounter any bugs.
 
 ## Acknowledgements
 
